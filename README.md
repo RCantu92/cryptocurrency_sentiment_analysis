@@ -1,34 +1,22 @@
-# Unit 12—Tales from the Crypto
+# Cryptocurrency Sentiment Analysis: Bitcoin & Ethereum
 
-![Stock Sentiment](Images/sentimental.jpeg)
+With all of the hype in the news about cryptocurrency, this project will take stock of the latest news headlines regarding Bitcoin and Ethereum to get a better feel for the current public sentiment around each coin.
 
-## Background
+This project applied natural language processing to understand the sentiment in the latest news articles featuring Bitcoin and Ethereum. This project also applied fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles.
 
-There's been a lot of hype in the news lately about cryptocurrency, so you want to take stock, so to speak, of the latest news headlines regarding Bitcoin and Ethereum to get a better feel for the current public sentiment around each coin.
+The following is a list of the project's undertaking:
 
-In this assignment, you will apply natural language processing to understand the sentiment in the latest news articles featuring Bitcoin and Ethereum. You will also apply fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles.
-
-Complete the following tasks:
-
-1. [Sentiment Analysis](#Sentiment-Analysis)
-2. [Natural Language Processing](#Natural-Language-Processing)
-3. [Named Entity Recognition](#Named-Entity-Recognition)
+1. Sentiment Analysis
+2. Natural Language Processing
+3. Named Entity Recognition]
 
 - - -
-
-### Files
-
-[Starter Notebook](Starter_Code/stock_sentiment.ipynb)
-
-- - -
-
-### Instructions
 
 #### Sentiment Analysis
 
-Use the [newsapi](https://newsapi.org/) to pull the latest news articles for Bitcoin and Ethereum and create a DataFrame of sentiment scores for each coin.
+Used the newsapi to pull the latest news articles for Bitcoin and Ethereum and created a DataFrame of sentiment scores for each coin.
 
-Use descriptive statistics to answer the following questions:
+Used descriptive statistics to answer the following questions:
 
 > Which coin had the highest mean positive score?
 >
@@ -38,53 +26,30 @@ Use descriptive statistics to answer the following questions:
 
 #### Natural Language Processing
 
-In this section, you will use NLTK and Python to tokenize the text for each coin. Be sure to:
+In this section, this project used NLTK and Python to tokenize the text for each coin. Some extra steps taken are as follows:
 
 1. Lowercase each word
 2. Remove punctuation
 3. Remove stop words
 
-Next, look at the ngrams and word frequency for each coin.
+Next, looked at the ngrams and word frequency for each coin.
 
-1. Use NLTK to produce the ngrams for N = 2.
-2. List the top 10 words for each coin.
+1. Used NLTK to produce the ngrams for N = 2.
+2. Listed the top 10 words for each coin.
 
-Finally, generate word clouds for each coin to summarize the news for each coin.
-
-![btc-word-cloud.png](Images/btc-word-cloud.png)
-
-![eth-word-cloud.png](Images/eth-word-cloud.png)
-
-
+Finally, generated word clouds for each coin to summarize the news for each coin.
 
 #### Named Entity Recognition
 
-In this section, you will build a named entity recognition model for both coins and visualize the tags using SpaCy.
+In this section, the project built a named entity recognition model for both coins and visualize the tags using SpaCy.
 
-![btc-ner.png](Images/btc-ner.png)
+## Built With
 
-![eth-ner.png](Images/eth-ner.png)
+* [Python](https://www.python.org/) - Programming language.
+* [Pandas](https://pandas.pydata.org/) - Data analysis and manipulation tool.
+* [newsapi](https://newsapi.org/) - API used to access news articles.
+* [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) - Rule based sentiment analysis tool
 
-- - -
+## Authors
 
-### Resources
-
-[Vader Sentiment Analysis](http://www.nltk.org/howto/sentiment.html)
-
-- - -
-
-### Hints and Considerations
-
-The free developer version of the News API limits the total monthly requests, so be careful not to exceed the free limits.
-
-- - -
-
-### Submission
-
-* Create Jupyter Notebooks for the NLP analysis and host the notebooks on GitHub.
-
-* Include a Markdown that summarizes your homework and include this report in your GitHub repo.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* **Roberto Cantu**  - [GitHub](https://github.com/RCantu92)
