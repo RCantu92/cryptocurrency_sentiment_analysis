@@ -47,8 +47,14 @@ In this section, the project built a named entity recognition model for both coi
 
 * [Python](https://www.python.org/) - Programming language.
 * [Pandas](https://pandas.pydata.org/) - Data analysis and manipulation tool.
-* [newsapi](https://newsapi.org/) - API used to access news articles.
-* [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) - Rule based sentiment analysis tool
+* [pprint](https://docs.python.org/3/library/pprint.html) - Module providing a capability to “pretty-print” arbitrary Python data structures in a form which can be used as input to the interpreter.
+* [newsapi](https://newsapi.org/docs) - API used to access news articles.
+* [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) - Rule based sentiment analysis tool.
+* [Natural Language Toolkit (NLTK)](https://www.nltk.org/) - Leading platform for building Python programs to work with human language data.
+* [Regular Expression Operation (Re)](https://docs.python.org/3/library/re.html) - Module providing regular expression matching operations.
+* [Collections](https://docs.python.org/3/library/collections.html) - Module providing specialized container datatypes alternatives to Python.
+* [WordCloud](http://amueller.github.io/word_cloud/index.html) - Word cloud generator in Python.
+* [Matplotlib](https://matplotlib.org/index.html) - Comprehensive library for creating static, animated, and interactive visualizations in Python.
 
 ## Authors
 
