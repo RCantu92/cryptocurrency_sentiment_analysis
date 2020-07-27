@@ -1,51 +1,83 @@
 # Cryptocurrency Sentiment Analysis: Bitcoin & Ethereum
 
-With all of the hype in the news about cryptocurrency, this project will take stock of the latest news headlines regarding Bitcoin and Ethereum to get a better feel for the current public sentiment around each coin.
+This project aims to produce a sentiment analysis of crypto, specifically with Bitcoin and Ethereum. The reason this is valuable is that it provides a quick snapshot of the overall sentiment of both blockchains. This information could then be used to inform certain decisions regarding the respective blockchains.
 
-This project applied natural language processing to understand the sentiment in the latest news articles featuring Bitcoin and Ethereum. This project also applied fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles.
+## Getting Started
 
-The following is a list of the project's undertaking:
+### Prerequisites
 
-1. Sentiment Analysis
-2. Natural Language Processing
-3. Named Entity Recognition]
+For this project, you will need a newsapi key. You can get the key here by clicking "Get API Key" on [this](https://newsapi.org/) page.
 
-- - -
+### Installing
 
-#### Sentiment Analysis
+Installation of the necessary tools is as follows:
 
-Used the newsapi to pull the latest news articles for Bitcoin and Ethereum and created a DataFrame of sentiment scores for each coin.
+JupyterLab
 
-Used descriptive statistics to answer the following questions:
+```
+pip install jupyterlab
+```
 
-> Which coin had the highest mean positive score?
->
-> Which coin had the highest negative score?
->
-> Which coin had the highest positive score?
+Vader Sentiment Analysis
+```
+pip install vaderSentiment
+```
 
-#### Natural Language Processing
+Natural Language Toolkit (NLTK
 
-In this section, this project used NLTK and Python to tokenize the text for each coin. Some extra steps taken are as follows:
+```
+pip install --user -U nltk
+```
+WordCloud
 
-1. Lowercase each word
-2. Remove punctuation
-3. Remove stop words
+```
+pip install wordcloud
+```
+Matplotlib
 
-Next, looked at the ngrams and word frequency for each coin.
+```
+pip install -U matplotlib
+```
+spaCy
 
-1. Used NLTK to produce the ngrams for N = 2.
-2. Listed the top 10 words for each coin.
+```
+pip install spacy
+```
+---
 
-Finally, generated word clouds for each coin to summarize the news for each coin.
+# Project Findings:
 
-#### Named Entity Recognition
+## Sentiment Analysis Report:
 
-In this section, the project built a named entity recognition model for both coins and visualize the tags using SpaCy.
+>	Which coin had the highest mean positive score?
+
+Bitcoin  had the highest mean possible score with 0.0652 over Ethereum's 0.059.
+
+>	Which coin had the highest negative score?
+
+Bitcoin had the highest max compound score with 0.688 over Ethereum's 0.625.
+
+>	Which coin had the highest positive score?
+
+Ehtereum had the highest max positive score with 0.139 over Bitcoin's 0.117.
+
+## Natural Language Processing Report:
+
+The Bitcoin word cloud, after tokenizing all of the text, was very unexpected, especially due to the fact that it seemed to have repeating articles after being pulled from the News API. Perhaps, a specific source or approach could have been suggested to be used to pull the data.
+
+On the other hand, Ethereum did not yield a surprising word cloud, but did provide interesting results.
+
+
+## Named Entity Recognition Report:
+
+The Named Entity Recognition yielded similar results to the NLP report, but it WAS helpful to see a list of the named entities for both Bitcoin and Ethereum.
+
+---
 
 ## Built With
 
 * [Python](https://www.python.org/) - Programming language.
+* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/index.html) - Next-generation web-based user interface for Project Jupyter.
 * [Pandas](https://pandas.pydata.org/) - Data analysis and manipulation tool.
 * [pprint](https://docs.python.org/3/library/pprint.html) - Module providing a capability to “pretty-print” arbitrary Python data structures in a form which can be used as input to the interpreter.
 * [newsapi](https://newsapi.org/docs) - API used to access news articles.
@@ -55,6 +87,7 @@ In this section, the project built a named entity recognition model for both coi
 * [Collections](https://docs.python.org/3/library/collections.html) - Module providing specialized container datatypes alternatives to Python.
 * [WordCloud](http://amueller.github.io/word_cloud/index.html) - Word cloud generator in Python.
 * [Matplotlib](https://matplotlib.org/index.html) - Comprehensive library for creating static, animated, and interactive visualizations in Python.
+* [spaCy](https://github.com/explosion/spaCy) - Library for advanced Natural Language Processing in Python and Cython.
 
 ## Authors
 
