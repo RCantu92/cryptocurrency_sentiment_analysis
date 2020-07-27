@@ -72,6 +72,12 @@ On the other hand, Ethereum did not yield a surprising word cloud, but did provi
 
 The Named Entity Recognition yielded similar results to the NLP report, but it WAS helpful to see a list of the named entities for both Bitcoin and Ethereum.
 
+A PDF of the findings can be found in:
+
+```
+./Code/crypto_sentiment.pdf
+```
+
 ---
 
 ## Built With
